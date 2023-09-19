@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+
+}
+
+.container {
+    position: relative;
+}
+
+.card {
+    position: absolute;
+    width: 1000px;
+    height: 60vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+}
+
+.container .imageMob {
+    display: none;
+}
+
+
+.imageDesk {
+    background-color: hsl(277, 64%, 61%);
+    width: 100%;
+    height: 60vh;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card .imageDesk img {
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+    opacity: 0.6;
+
+
+}
+
+.text {
+    padding: 50px 100px 60px 50px;
+    text-align: start;
+
+}
+
+.text h1 {
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    font-weight: 700;
+    padding: 15px 0;
+
+}
+
+.text h1 span {
+    color: hsl(277, 64%, 61%);
+}
+
+.text p {
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 10px 0 40px 0;
+}
+
+.text .cols {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text .cols .col h1 {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Inter';
+    padding-bottom: 0;
+
+}
+
+.text .cols .col p {
+    font-size: 12px;
+    font-family: 'Lexend Deca';
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+@media screen and (max-width:768px) {
+
+    .card {
+        width: 280px;
+        height: 600px;
+        display: grid;
+        margin: 70px 0;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .card .imageDesk {
+        display: none;
+    }
+
+    .card .imageMob {
+        width: 100%;
+        height: 100%;
+        display: block;
+        grid-row: 1;
+        background-color: hsl(277, 64%, 61%);
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+
+    }
+
+    .card .imageMob img {
+        height: inherit;
+        width: inherit;
+        border-radius: inherit;
+        opacity: 0.6;
+
+    }
+
+    .text {
+
+        padding: 20px;
+        text-align: center;
+    }
+
+    .text h1 {
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+
+    }
+
+    .text .cols {
+        display: block;
+    }
+
+    .text p {
+        font-size: 14px;
+        padding: 0 0 10px 0;
+        margin: 0;
+
+    }
+
+    .text .cols .col h1 {
+        font-size: 15px;
+
+    }
+
+    .text .cols .col p {
+        font-size: 10px;
+
+    }
+}
