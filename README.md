@@ -17,7 +17,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here]
+- Live Site URL: [https://naglaa99.github.io/stats-preview-card/]
 
 ### Built with
 
